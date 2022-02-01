@@ -1,0 +1,40 @@
+*{
+    font-size: 30px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-container{
+    display: flex;
+    margin-top: 40vh;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.buttons-container{
+    display: -ms-inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding-inline-start: 0;
+}
+
+.button{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: solid black;
+    border: hidden;
+    border-radius: 30px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    border: visible;
+    cursor: pointer;
+}
