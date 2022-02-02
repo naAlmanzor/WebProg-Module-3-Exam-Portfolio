@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    scroll-behavior: smooth;
+    scroll-margin: 100px;
+}
+
+/* PAGE CONTENT */
+
+.main{
+    align-items: center;
+    gap: 4em;
+}
+
+.center{display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+    
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.artworks{
+    margin:auto;
+}
+
+.left-align {text-align: left;}
+
+.right-align {text-align: right;}
+
+.center-align {text-align: center;}
+
+.justify{text-align: justify;}
+
+.bg-color {background-color: #222222;
+}
+
+.white{color: white;}
+
+/* CONTENT AREA  */
+
+.content-area{
+    width: 100%;
+    position: relative;
+    height: 3500px;
+}
+
+/* HEADER CONTENT */
+
+header {
+    height: 100px;
+    background: #222222;
+    width: 100%;
+    z-index: 12;
+    border-bottom: 4px solid white;
+    position: fixed;
+}
+
+
+nav{
+    float: right;
+    line-height: 100px;
+}
+
+nav a{
+    color: white;
+    margin: 0 10px;
+    text-transform: uppercase;
+    transition: ease-out 200ms;
+}
+
+nav a:hover{
+    border-width: 10px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: ease-in-out 200ms;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: 0 10%;
+}
+
+/* HOME CONTENT */
+
+.bg-text {
+    background-color: #222222;
+    color: white;
+    font-weight: bold;
+    border: 3px solid rgb(255, 255, 255);
+    position: relative;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    z-index: 2;
+    width: 45%;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex table-row;
+}
+
+.icons{
+    font-size: 30px;
+    color:white;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+/* SLIDESHOW CONTENT */
+
+.navigation{
+    position: relative;
+    margin-top: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-10%);
+    display: flex;
+}
+
+.bar{
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background-color: black;
+}
+
+.slides{
+    display: flex;
+}
+
+.slide{
+    transition: 0.6s;
+}
+
+/*Artwork-1*/ 
+
+#r1:checked ~ .s1{
+    margin-left:35%;
+    transform: scale(1.4);
+}
+
+#r1:checked ~ .s2{
+
+    margin-right: 2%;
+    transform: scale(0.5);
+    opacity: 0.5;
+}
+
+#r1:checked ~ .s3{
+    margin-left: -20%;
+    transform: scale(0.3);
+    opacity: 0.2;
+}
+
+
+/*Artwork-2*/
+
+#r2:checked ~ .s1 {
+    margin-left: 0%;
+    transform: scale(0.5);
+    opacity: 0.5;
+}
+
+#r2:checked ~ .s2{
+    transform: scale(1.4);
+}
+
+#r2:checked ~ .s3{
+    transform: scale(0.5);
+    opacity: 0.5;
+}
+
+
+/*Artwork-3*/
+
+#r3:checked ~ .s1{
+    margin-left: -30%;
+    transform: scale(0.3);
+    opacity: 0.2;
+}
+
+#r3:checked ~ .s2{
+    margin-left: -10%;
+    transform: scale(0.5);
+    opacity: 0.5;
+}
+
+#r3:checked ~ .s3{
+    margin-left: 5%;
+    transform: scale(1.4);
+}
+
+/* Radio */
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}

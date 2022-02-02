@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="assets/web-icon-quote.png">
+    <title>Quote Generator</title>
+</head>
+<body>
+    <h6>QUOTE GENERATOR</h6>
+    <div>
+        <div class="flex-container">
+            <div class="login-container">
+
+                <div class="quote-container">
+                    <h4 class="quote" id="quoteDisplay"></h4>
+                    
+                    <div class="quote-details">
+                        <div>
+                            <label class="author" id="quoteAuthor"></label>
+                        </div>
+                        
+                        <button class="quote-button-container" id="getQuoteBtn" onclick="getQuote()">Get Quote</button>
+                    </div>
+                    
+                </div>
+                
+                <button class="person-button-container" onclick="felixSelected()">FELIX KJELLBERG</button>
+                <button class="person-button-container" onclick="markSelected()">MARK FISCHBACH</button>
+                <button class="person-button-container" onclick="andrewSelected()">ANDREW HUSSIE</button>
+                <button class="person-button-container" onclick="karinaSelected()">KARINA FAREK</button>
+                <button class="person-button-container" onclick="edgarSelected()">EDGAR WRIGHT</button>
+            </div>
+        
+        </div>    
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
