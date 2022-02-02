@@ -1,9 +1,15 @@
 *{
-    font-size: 30px;
+    font-size: 35px;
+}
+
+html{
+    background-image: url('assets/bg-index.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body{
-    display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -11,30 +17,35 @@ body{
 
 .flex-container{
     display: flex;
-    margin-top: 40vh;
+    margin-top: 25vh;
+    padding: 10% 0px;
     align-items: center;
     flex-direction: column;
     width: 100%;
+    color: white;
 }
 
-.buttons-container{
-    display: -ms-inline-grid;
+.links-container{
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
     padding-inline-start: 0;
 }
 
-.button{
+.links-container a{
     background-color: transparent;
-    padding: 10px 20px;
-    border: solid black;
-    border: hidden;
-    border-radius: 30px;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
 }
 
-button:hover{
-    background-color: black;
-    color: white;
-    border: visible;
+.links-container a:hover{
+    background-color: white;
+    color: black;
     cursor: pointer;
+}
+
+.flex-container h2 {
+    font-weight: lighter;
 }
