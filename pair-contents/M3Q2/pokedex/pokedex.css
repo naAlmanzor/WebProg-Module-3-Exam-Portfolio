@@ -1,0 +1,140 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: orangered;
+    color: white;
+    margin: 0;
+    font-family: rubik;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 58px;
+    font-family: 'Joti One', cursive;
+	color: #FFCB04;
+	text-shadow:
+		3px 3px 0 #39569E,
+		-1px -1px 0 #39569E,
+		1px -1px 0 #39569E,
+		-1px 4px 0 #39569E,
+		1px 1px 0 #39569E;
+}
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.card {
+    list-style: none;
+    padding: 80px;
+    background-color: #f4f4f4;
+    color: #222;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+    cursor: pointer;
+}
+
+.card-desc {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    /* padding: px 30px; */
+    font-size: 32px;
+    font-weight: bold;
+    /* align-items: center; */
+}
+
+.card-image {
+    height: 200px;
+    background-image: url('../assets/pokeball.png');
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+
+.card-type {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: normal;
+    background-color: gray;
+    padding: 10px 20px;  
+    border-radius: 10px;
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width:100vw;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#closeBtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: 0px 1px 2px darkred;
+
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey;  */
+    background-color: white;
+    border-radius: 2px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(59, 59, 59); 
+    border-radius: 2px ;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1d1b1b; 
+  }

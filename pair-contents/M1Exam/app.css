@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADER CLASSES */
+
+.wrapper{
+    width: 1170px;
+    margin: 0 20%;
+}
+
+header{
+    height: 100px;
+    background: #2d2f21;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+li{
+    float: right;
+    line-height: 100px;
+    list-style-type: none;
+}
+
+li a{
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    margin: 0 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* INTRO CLASSES */
+
+.intro{
+    width: 100%;
+    height: 780px;
+    position: fixed;
+    top: 100px;
+    background-image: url(Assets/banner-background-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-text{
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid white;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+/*CONTENT CLASSES*/
+
+.content-area{
+    width: 100%;
+    position: relative;
+    top: 780px;
+    background: #e4ccc8;
+    height: 4400px;
+}
+
+/* OPENING CLASSES */
+
+.left-align{
+    text-align: justify;
+    text-align-last: left;
+}
+
+.right-align{
+    text-align: justify;
+    text-align-last: right;
+}
+
+/* SLIDESHOW CLASSES */
+.slideshow{
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.position{
+    left: 50%;
+    transform: translate(25%, 5%);
+
+}
+
+.navigation{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid white;
+    margin: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover{
+    background-color: white;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+    
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+
+/* ABOUT CLASSES */
+.icons{
+    font-size:40px;
+    color: black;
+    margin: 5px;
+}
+
+.icons:hover{
+    color: white;
+}

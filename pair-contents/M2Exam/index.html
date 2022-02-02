@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+		/>
+
+        <link 
+            rel="icon" 
+            href="assets/web-icon-pet.png"
+        />
+
+    <title>Pet Finder</title>
+</head>
+
+
+<body onload="set()">
+    <div class="container">
+        <!-- Side Bar -->
+        <div class="side">
+            <div class="header">
+                <div class="avatar">
+                    <img src="https://randomuser.me/api/portraits/lego/8.jpg" alt="" />
+                </div>
+                <div class="title">Pet Finder</div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="active">Liked Pets</li>
+                </ul>
+            </div>
+
+            <div id="likedPets" class="details"></div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <div class="card">
+                <div class="pet" >
+                    <img
+                        id = "petImage"
+                        class="pet"
+                        src="assets/default-image.png"
+                        alt=""
+                    />
+                    <div class="profile" id="profile">
+                        <div class="name" id="petName"></div>
+                        <div class="local">
+                            <span id="petType"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons" id="buttons">
+                <button class="no" id="dislike" onclick="dislikePet()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button class="heart" id="heart" onclick="heartPet()">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
