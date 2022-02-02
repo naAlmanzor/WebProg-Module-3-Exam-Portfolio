@@ -21,7 +21,7 @@ body{
     padding: 10% 0px;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
     color: white;
 }
 
@@ -35,6 +35,7 @@ body{
     background-color: transparent;
     color: white;
     padding: 14px 25px;
+    border: solid white hidden;
     border-radius: 20px;
     text-align: center;
     text-decoration: none;
@@ -42,6 +43,7 @@ body{
 
 .links-container a:hover{
     background-color: white;
+    border: visible;
     color: black;
     cursor: pointer;
 }
