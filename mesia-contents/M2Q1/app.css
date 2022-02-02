@@ -1,0 +1,105 @@
+html{
+    background-image: url('assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+h1,h2,h3{
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+}
+
+h1-new-quote{
+    
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+p, .tooltip{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.text-align-center{
+    text-align: center;
+
+}
+
+.main{
+    padding: 2em;
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10px;
+    font-size: 80px;
+    font-family: 'Lobster', cursive;
+    color: #811112;
+    
+}
+.title-desc {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #473C38;
+}
+
+.circle-container{
+    width: 150px;
+    border-radius: 100px;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.circle-container:hover{
+    border-color: #095256;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.author-divider{
+    margin: 50px;
+}
+
+.button{
+    background-color: #811112;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    width: 150px;
+    font-weight: 600;
+
+}
+
+.button:hover{
+    background-color: #095256;
+    cursor: pointer;
+}
+
+
+  
+
+ 
