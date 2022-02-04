@@ -1,5 +1,6 @@
 const main = document.getElementById("root");
 const fetchButton = document.getElementById("fetch");
+const msg = document.getElementById("msg")
 const logo = document.createElement('img');
 logo.src = 'https://www.studioghibli.com.au/wp-content/uploads/2017/07/ghibli_logo_gold.png';
 logo.setAttribute('align', 'center');
@@ -43,6 +44,8 @@ const getFilms = () => {
         card.appendChild(p);
         card.appendChild(p2);
         card.appendChild(a);
+
+        msg.style.display="none";
       });
     })
     .catch((error) => {

@@ -30,7 +30,7 @@ html {
 #root {
   max-width: 1200px;
   margin: 0 auto;
-}
+}   
 
 h2 {
   text-align: center;
@@ -39,6 +39,16 @@ h2 {
   margin: 0 0 2rem 0;
   font-size: 1.5rem;
   color: white;
+}
+
+.wait-msg{
+  margin-top: 5%;
+}
+
+.wait-msg p {
+  text-align: center;
+  font-size: 20px;
+  padding: 0;
 }
 
 img {
